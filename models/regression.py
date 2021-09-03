@@ -5,7 +5,7 @@ import pandas as pd
 __author__ = "Vidyadhar Mudium"
 
 
-class LinearRegression():
+class LinearRegression(object):
     def __init__(self, x_data, y, add_const=True):
         self.x_data = x_data
         self.y = y

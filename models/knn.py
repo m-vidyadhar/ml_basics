@@ -18,7 +18,7 @@ def _get_weights(dist_df, neighbors):
     return np.divide((weights ** -2), np.sum(weights ** -2, axis=1).reshape(-1, 1))
 
 
-class kNNClassifer():
+class kNNClassifer(object):
     def __init__(self, x_data, labels) -> None:
         self.x_data = x_data
         self.labels = labels
@@ -43,7 +43,7 @@ class kNNClassifer():
         return np.argmax(self._weighted_count(self.ngh_labels, self.weights), axis=1)
 
 
-class kNNRegressor():
+class kNNRegressor(object):
     def __init__(self, x_data, y) -> None:
         self.x_data = x_data
         self.y = y

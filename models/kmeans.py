@@ -16,7 +16,7 @@ def plt_clusters(x_data):
     return
 
 
-class KMeans():
+class KMeans(object):
     def __init__(self, x_data):
         self.x_data = x_data
         self.n_samples = len(x_data)
